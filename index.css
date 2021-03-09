@@ -1,0 +1,96 @@
+html {
+    scroll-behavior: smooth;
+    offset-block-start: 77px;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 62px;
+    margin: -62px 0 0;
+}
+
+/* HEADER */
+
+.navbar-brand img {
+    width: 100px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+
+/* MAIN */
+
+.carousel-section {
+    position: relative;
+}
+
+.carousel-section img {
+    height: 70vh;
+    /* Redimensiona la imagen para que no pierda su relación-aspecto */
+    object-fit: cover;
+    /* Coloca el filtro deseado con la opacidad deseada */
+    filter: grayscale(70%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1;
+}
+
+.overlay .container,
+.overlay .row {
+    height: 100%;
+} 
+
+.social-div {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #212529;
+}
+
+.place-section {
+    color: white;
+    background-color: #343a40;
+}
+
+.place-image {
+    width: 100%;
+}
+
+/* FOOTER */
+
+#footer {
+    background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+}
+
+#footer a {
+    color: white;
+}
+
+
+/* GLOBALS */
+
+.text-platzi {
+    color:#97c93e !important;
+}
+
+.text-platzi:hover {
+    color:#7ca732 !important;
+}
+
+.btn-platzi {
+    background-color: #97c93e;
+    color: white;
+}
+
+.btn-platzi:hover {
+    background-color: #7ca732;
+}
