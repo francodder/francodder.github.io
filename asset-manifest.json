@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.5bf374ed.chunk.css",
-    "main.js": "./static/js/main.94a28c54.chunk.js",
-    "main.js.map": "./static/js/main.94a28c54.chunk.js.map",
+    "main.css": "./static/css/main.0a835e48.chunk.css",
+    "main.js": "./static/js/main.a4871562.chunk.js",
+    "main.js.map": "./static/js/main.a4871562.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.b1f9882e.js",
     "runtime-main.js.map": "./static/js/runtime-main.b1f9882e.js.map",
     "static/js/2.fd590281.chunk.js": "./static/js/2.fd590281.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.ede8dd0c.chunk.js": "./static/js/3.ede8dd0c.chunk.js",
     "static/js/3.ede8dd0c.chunk.js.map": "./static/js/3.ede8dd0c.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.5bf374ed.chunk.css.map": "./static/css/main.5bf374ed.chunk.css.map",
+    "static/css/main.0a835e48.chunk.css.map": "./static/css/main.0a835e48.chunk.css.map",
     "static/js/2.fd590281.chunk.js.LICENSE.txt": "./static/js/2.fd590281.chunk.js.LICENSE.txt",
     "static/media/countdownPage.css": "./static/media/pattern-hills.b05527cf.svg",
     "static/media/FooterIcon.css": "./static/media/linkedinHover.d818764c.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.b1f9882e.js",
     "static/js/2.fd590281.chunk.js",
-    "static/css/main.5bf374ed.chunk.css",
-    "static/js/main.94a28c54.chunk.js"
+    "static/css/main.0a835e48.chunk.css",
+    "static/js/main.a4871562.chunk.js"
   ]
 }
