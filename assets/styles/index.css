@@ -1,0 +1,66 @@
+:root {
+    --db-body: #1C2230;
+    --db-main: #181E2A;
+    --db-test: #21293C;
+    --db-foo: #0C1524;
+    --cyan: #65E2D9;
+    --blue: #339ECC;
+    --negative: #FF4242;
+
+    --open-sans: 'Open Sans', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;    
+    background-color: var(--db-body);
+
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    padding: 26px 20px 0 20px;
+    display: flex;
+
+    /* border: 2px solid red; */
+}
+
+header img {
+    width: 90px;
+    height: 26.59px;
+    /* min-width: ; */
+}
+
+.header-navbar {    
+    margin-left: auto;
+    margin-top: -10px;
+}
+
+.header-navbar ul {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.header-navbar li+li {
+    margin-left: 20px;
+}
+
+.header-navbar__item {
+    font-family: var(--raleway);
+    font-size: 12px;
+    text-decoration: none;
+    
+    color: white;
+}
