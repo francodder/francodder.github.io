@@ -83,7 +83,18 @@
   &__info {
     margin: 3rem auto 0 auto;
     max-width: 80rem;
+    // display: flex;
+    // align-items: center;
   }
+
+  &__picture {
+    height: 30rem;
+
+    img {
+      height: 100%;
+    }
+  }
+
   &__cta {
     margin-top: 5rem;
     text-align: center;
@@ -92,6 +103,7 @@
 
 .about {
   background: rgb(250, 250, 250);
+  
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -100,6 +112,7 @@
       grid-template-columns: 1fr;
       grid-gap: 8rem;
     }
+
     &-title {
       font-weight: 700;
       font-size: 2.8rem;
@@ -108,6 +121,7 @@
         font-size: 2.4rem;
       }
     }
+
     &-details-para {
       font-size: 1.8rem;
       color: grey;
@@ -118,6 +132,7 @@
         font-weight: 700;
         margin: 0 3px;
       }
+
       &:last-child {
         margin-bottom: 4rem;
       }
