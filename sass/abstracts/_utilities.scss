@@ -45,7 +45,7 @@
       top: calc(100% + 1.5rem);
       height: 5px;
       width: 3rem;
-      background: $themeClrPrimary;
+      background: $cl-secondary-500;
       left: 50%;
       transform: translateX(-50%);
       border-radius: $commonBorderRadius;
@@ -89,6 +89,7 @@
 }
 
 .btn {
+  position: relative;
   background: #fff;
   color: #333;
   text-transform: uppercase;
@@ -97,10 +98,12 @@
   font-weight: 700;
   border-radius: $commonBorderRadius;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  transition: transform .3s;
+  transition: all .3s;
 
   &:hover {
     transform: translateY(-3px);
+    // background-color: $cl-primary-500;
+    // color: $cl-white;
   }
 
   &--bg {
@@ -113,8 +116,27 @@
   }
 
   &--theme {
-    background: $themeClrPrimary;
-    color: #fff;
+    background: $cl-primary-500;
+    color: $cl-font-000;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color: $cl-primary-600;
+      border-radius: 0 0 5px 5px;
+      visibility: hidden;
+      opacity: 0;
+      transition: all .3s;
+    }
+
+    &:hover::after {
+      visibility: visible;
+      opacity: 1;
+    }
   }
   &--theme-inv {
     color: $themeClrPrimary;

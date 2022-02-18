@@ -1,9 +1,9 @@
 .home-hero {
   color: #fff;
   background: linear-gradient(
-      to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
+      to right bottom,
+      rgba($cl-primary-500, 0.8) 10%,
+      rgba($cl-secondary-700, 0.8) 60%
     ),
     url(../../assets/svg/common-bg.svg);
   background-position: center;
@@ -52,7 +52,7 @@
     transition: background .3s;
 
     &:hover {
-      background: rgba(#fff,.1);
+      background: rgba($cl-secondary-700,.2);
     }
 
     &--bd-none {
@@ -204,9 +204,9 @@
 
 .contact {
   background: linear-gradient(
-      to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
+      to right bottom,
+      rgba($cl-primary-500, 0.8) 10%,
+      rgba($cl-secondary-700, 0.8) 60%
     ),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
