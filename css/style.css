@@ -262,9 +262,11 @@ textarea {
     height: 30rem; }
     .home-hero__picture img {
       height: 100%; }
-  .home-hero__cta {
-    margin-top: 5rem;
-    text-align: center; }
+  .home-hero__counter {
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    margin-top: 5rem; }
 
 .about {
   background: #fafafa; }
@@ -692,9 +694,6 @@ textarea {
     font-weight: 600;
     color: #FFFFFF;
     transition: all .3s; }
-    .skills__skill:hover:hover {
-      transform: translateY(-3px);
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
 
 .mouse {
   width: 25px;
@@ -726,3 +725,104 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+@keyframes view-counter-in {
+  from {
+    transform: translateY(-30px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes number-in {
+  from {
+    transform: translateY(80px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes label-in {
+  from {
+    transform: translateX(-50%) translateY(-20px);
+    opacity: 0; }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1; } }
+
+.view-counter {
+  position: relative;
+  width: 300px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  animation: view-counter-in .6s both; }
+
+.view-counter .view-counter__label {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  animation: label-in .4s 1.4s ease-out both; }
+
+.view-counter__card-container {
+  position: relative;
+  width: 68px;
+  height: 64px;
+  margin: 0 10px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; }
+
+.view-counter__top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #E7E4E4; }
+
+.view-counter__top.see-through {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  border-radius: 5px 5px 5px 5px;
+  background-color: rgba(231, 228, 228, 0.34);
+  z-index: 200; }
+
+.view-counter__bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #fff; }
+
+.view-counter__count {
+  margin-top: -2px;
+  margin-left: 1px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 5rem;
+  color: #FA560F;
+  z-index: 100;
+  user-select: none;
+  animation: number-in 0.7s cubic-bezier(0.52, 0.53, 0.48, 1.48) both; }
+  .view-counter__count--1 {
+    animation-delay: .1s; }
+  .view-counter__count--2 {
+    animation-delay: .25s; }
+  .view-counter__count--3 {
+    animation-delay: .4s; }
+  .view-counter__count--4 {
+    animation-delay: .55s; }

@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dopefolio</title>
+    <title>Franco Rocchia</title>
     <meta name="description" content="Portfolio Template for Developer" />
 
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <script> </script>
+
   </head>
   <body>
 
@@ -94,11 +98,46 @@
             Soy un desarrollador web dedicado a crear experiencias de usuario excepcionales. 
             Con mis conocimientos construyo webs modernas, efectivas y escalables.
           </p>
-          <!-- <div class="home-hero__picture">
-            <img src="assets/png/pg.png" alt="Estoy parado mirando al horizonte">
-          </div> -->
-          <!-- Soy un programador especializado en frameworks de JavaScript con el enfoque puesto en crear excelentes experiencias de usuario. Mediante mis conocimientos en programación, diseño y UI/UX desarrollo aplicaciones web modernas y efectivas. Busco crecer como profesional participando proactivamente en proyectos que sean desafiantes y escalables. -->
         </div>
+
+         <!-- VIEW COUNTER -->
+         <div class="home-hero__counter">
+          
+          <div class="view-counter">
+
+            <div class="view-counter__card-container">
+              <div class="view-counter__top"></div>
+              <div class="view-counter__top see-through"></div>
+              <div class="view-counter__bottom"></div>
+                <p class="view-counter__count view-counter__count--1">0</p>
+            </div>
+
+            <div class="view-counter__card-container">
+              <div class="view-counter__top"></div>
+              <div class="view-counter__top see-through"></div>
+              <div class="view-counter__bottom"></div>
+                <p class="view-counter__count view-counter__count--2">2</p>
+            </div>
+
+            <div class="view-counter__card-container">
+              <div class="view-counter__top"></div>
+              <div class="view-counter__top see-through"></div>
+              <div class="view-counter__bottom"></div>
+                <p class="view-counter__count view-counter__count--3">1</p>
+            </div>
+
+            <div class="view-counter__card-container">
+              <div class="view-counter__top"></div>
+              <div class="view-counter__top see-through"></div>
+              <div class="view-counter__bottom"></div>
+                <p class="view-counter__count view-counter__count--4">4</p>
+            </div>
+
+            <span class="view-counter__label">Visitas</span>
+          </div>
+        </div>
+
+
         <div class="home-hero__cta">
           <a href="./#projects" class="btn btn--bg" style="visibility: hidden;">Proyectos</a>
         </div>
@@ -126,24 +165,9 @@
             />
           </a>
         </div>
-        <!-- <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/twitter-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div> -->
-        <!-- <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/yt-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div> -->
+
+
+
         <div class="home-hero__social">
           <a
             href="https://www.instagram.com/franco.rocchia/"
@@ -265,7 +289,7 @@
                 href="./project-1.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >Caso de estudio</a
+                >Más info</a
               >
             </div>
           </div>
@@ -289,7 +313,7 @@
                 href="./project-2.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >Caso de estudio</a
+                >Más info</a
               >
             </div>
           </div>
@@ -313,7 +337,7 @@
                 href="./project-3.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >Caso de estudio</a
+                >Más info</a
               >
             </div>
           </div>
@@ -336,7 +360,7 @@
                 href="./project-4.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >Caso de estudio</a
+                >Más info</a
               >
             </div>
           </div>
@@ -397,6 +421,8 @@
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -440,6 +466,10 @@
       </div>
     </footer>
 
-    <script src="./index.js"></script>
+
+    <script type="application/javascript" src="./js/view-count.js"></script>
+    <script type="application/javascript" src="./index.js"></script>
+
+
   </body>
 </html>

@@ -95,9 +95,12 @@
     }
   }
 
-  &__cta {
+  &__counter {
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
     margin-top: 5rem;
-    text-align: center;
+    // text-align: center;
   }
 }
 
