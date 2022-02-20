@@ -734,6 +734,14 @@ textarea {
     transform: translateY(0);
     opacity: 1; } }
 
+@keyframes view-counter-in--phone {
+  from {
+    transform: scale(0.7) translateY(-30px);
+    opacity: 0; }
+  to {
+    transform: scale(0.7) translateY(0);
+    opacity: 1; } }
+
 @keyframes number-in {
   from {
     transform: translateY(80px);
@@ -757,6 +765,9 @@ textarea {
   display: flex;
   align-items: center;
   animation: view-counter-in .6s both; }
+  @media only screen and (max-width: 37.5em) {
+    .view-counter {
+      animation: view-counter-in--phone .6s both; } }
 
 .view-counter .view-counter__label {
   position: absolute;
