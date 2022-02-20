@@ -1,0 +1,45 @@
+// ---------------- VIEW COUNTER
+
+@keyframes view-counter-in {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes view-counter-in--phone {
+    from {
+        transform: scale(.7) translateY(-60px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(.7) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes number-in {
+    from {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes label-in {
+    from {
+        transform: translateX(-50%) translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
