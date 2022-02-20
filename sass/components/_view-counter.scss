@@ -1,6 +1,6 @@
 $cl-card-top: #e2e1e1;
 $cl-card-botom: $cl-white;
-$cl-numbers: $cl-secondary-600;
+$cl-numbers: $cl-secondary-700;
 
 // ---------------- CONTAINER CLASSES
 
@@ -46,6 +46,7 @@ $cl-numbers: $cl-secondary-600;
     align-items: center;
     // border-bottom: 4px solid #17171faf;
     border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 3px 8px;
 }
 
 .view-counter__top {
